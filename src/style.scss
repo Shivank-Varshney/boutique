@@ -42,7 +42,7 @@ $primary-color: #ae3336;
     background-color: #fff;
     width: 280px;
     padding: 50px 20px;
-    z-index: 11;
+    z-index: 9;
     ul {
       list-style: none;
       li {
@@ -112,6 +112,25 @@ $primary-color: #ae3336;
           color: #fff;
           font-size: 24px;
           text-decoration: none;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 576px) {
+  #home-header {
+    .category-tab {
+      width: 200px;
+      .heading {
+        margin: 70px 0 10px 0;
+        font-size: 26px;
+      }
+      ul {
+        li {
+          padding: 10px 0;
+          .link {
+            font-size: 18px;
+          }
         }
       }
     }
