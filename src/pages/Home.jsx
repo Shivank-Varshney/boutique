@@ -85,7 +85,7 @@ function Home() {
 
       {/* Third Section Start */}
       <section id="home-third-section">
-        <div className="container mb-5">
+        <div className="container mb-5 mt-3">
           <div className="row">
             <div className="col-12">
               <div className="offers">Offers</div>
