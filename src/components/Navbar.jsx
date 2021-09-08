@@ -93,7 +93,7 @@ function Navbar() {
           </div>
           <div className="row">
             <div className="col">
-              <div className="hemburger-menu" onClick={Toggler}>
+              <div className="hemburger-menu d-xl-none d-flex" onClick={Toggler}>
                 <MenuIcon />
               </div>
               <img src={Logo} className="img-fluid logo" alt="logo" />
