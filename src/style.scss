@@ -1,0 +1,323 @@
+$primary-color: #ae3336;
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  font-family: "Segoe UI", sans-serif;
+}
+
+// Navbar Start
+#navbar {
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+  .web-view {
+    ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 10px 0;
+      li {
+        .link {
+          text-decoration: none;
+          padding: 10px 30px;
+          color: #707070;
+          font-weight: bolder;
+          font-size: 20px;
+          img {
+            height: 30px;
+          }
+        }
+      }
+    }
+  }
+  .mobile-view {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #fff;
+    width: 280px;
+    padding: 50px 20px;
+    z-index: 11;
+    ul {
+      list-style: none;
+      li {
+        padding: 15px 0;
+        border-bottom: 1px solid #707070;
+        .link {
+          display: flex;
+          justify-content: center;
+          text-decoration: none;
+          color: #707070;
+          font-weight: bolder;
+          font-size: 20px;
+          img {
+            height: 30px;
+          }
+        }
+      }
+    }
+  }
+  .hemburger-menu {
+    color: #fff;
+    margin: 10px 0 0 25px;
+    cursor: pointer;
+    display: inline-block;
+    .MuiSvgIcon-root{
+      font-size: 40px;
+    }
+  }
+  .logo {
+    background-color: rgba(255, 255, 255, 0.563);
+    padding: 20px;
+    height: 140px;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+// Navbar End
+
+// Home Page Start
+#home-header {
+  background-image: url(./assets/home-illustration.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  .category-tab {
+    width: 250px;
+    background-color: #ae3335c6;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    .heading {
+      margin: 70px 0 10px 0;
+      font-size: 32px;
+      color: #fff;
+      font-weight: bold;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+      li {
+        padding: 10px 0;
+        .link {
+          color: #fff;
+          font-size: 24px;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+// Home Page End
+
+// Second Section Start
+#home-second-section {
+  .img-fluid {
+    width: 100%;
+  }
+  .offers {
+    background-color: #ae3336;
+    padding: 20px;
+    p {
+      color: #fff;
+      font-weight: bolder;
+      font-size: 36px;
+      border: 2px solid #fbfb09;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 180px;
+      text-transform: capitalize;
+    }
+  }
+}
+// Second Section Start
+
+// Third Section Start
+#home-third-section {
+  background-color: #4f513c;
+  .offers {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-weight: bolder;
+    font-size: 42px;
+  }
+}
+// Third Section End
+
+// Fouth Section Start
+#home-fourth-section {
+  background-color: #d5c3b3;
+  padding: 100px 0 40px;
+  .text {
+    font-weight: bolder;
+    font-size: 22px;
+  }
+  .explore-btn {
+    background-color: $primary-color;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 40px;
+    margin: 60px 0 20px;
+    font-size: 20px;
+    padding: 8px 30px;
+  }
+}
+// Fouth Section End
+
+// Home Trending Section Start
+#home-trending {
+  margin: 50px 0 200px;
+  .trending-section-heading {
+    color: #000;
+    font-size: 36px;
+    font-weight: bolder;
+    text-transform: capitalize;
+    text-align: center;
+    margin: 0 0 50px 0;
+  }
+  .boxWrapper {
+    height: 400px;
+    .img {
+      height: 300px;
+      background-color: #d5c3b3;
+    }
+    .name {
+      font-size: 26px;
+      font-weight: bolder;
+      text-transform: capitalize;
+    }
+    .price {
+      font-size: 22px;
+      font-weight: bolder;
+      text-transform: capitalize;
+    }
+  }
+}
+// Home Trending Section End
+
+// Footer Start
+#footer {
+  background-color: $primary-color;
+  padding: 0 0 50px;
+  .main-footer-container {
+    border-bottom: 1px solid #fff;
+    .subcribe-footer {
+      background-color: #d5c3b3;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 15px 0;
+      margin: -38px 0 40px 0;
+      .subscribe-text {
+        color: #212121;
+        font-weight: bolder;
+        font-size: 28px;
+        text-transform: capitalize;
+      }
+      .subscribe-btn {
+        background-color: $primary-color;
+        color: #fff;
+        border-radius: 40px;
+        font-size: 22px;
+        padding: 4px 20px;
+        text-transform: capitalize;
+      }
+    }
+    .footer-list-heading {
+      color: #fff;
+      font-weight: 700;
+      font-size: 20px;
+      text-transform: capitalize;
+      margin: 0 0 20px 0;
+    }
+    .footer-list {
+      list-style: none;
+      padding: 0;
+      .list {
+        color: #fff;
+        text-decoration: none;
+      }
+    }
+    .footer-icon-list {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      a {
+        color: #fff;
+        margin: 0 20px 0 0;
+      }
+    }
+  }
+}
+@media screen and (max-width: 992px) {
+  #footer {
+    .main-footer-container {
+      .subcribe-footer {
+        padding: 10px 0;
+        margin: -35px 0 40px 0;
+        .subscribe-text {
+          font-size: 22px;
+        }
+        .subscribe-btn {
+          font-size: 20px;
+          padding: 4px 18px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  #footer {
+    .main-footer-container {
+      .subcribe-footer {
+        padding: 10px 0;
+        margin: -35px 0 40px 0;
+        .subscribe-text {
+          font-size: 20px;
+        }
+        .subscribe-btn {
+          font-size: 18px;
+          padding: 4px 18px;
+        }
+      }
+      .footer-list-heading {
+        font-size: 20px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 576px) {
+  #footer {
+    .main-footer-container {
+      .subcribe-footer {
+        padding: 10px 0;
+        margin: -35px 0 40px 0;
+        .subscribe-text {
+          font-size: 18px;
+        }
+        .subscribe-btn {
+          font-size: 16px;
+          padding: 4px 16px;
+        }
+      }
+      .footer-list-heading {
+        font-size: 18px;
+      }
+    }
+  }
+}
+// Footer End
